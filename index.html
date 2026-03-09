@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SS FITNESS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+scroll-behavior:smooth;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#000;
+padding:15px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#ff4500;
+}
+
+nav a{
+margin-left:20px;
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ff4500;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+url("https://images.unsplash.com/photo-1558611848-73f7eb4001a1") center/cover no-repeat;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+color:#ff4500;
+margin-bottom:20px;
+}
+
+.hero button{
+padding:15px 35px;
+border:none;
+background:#ff4500;
+color:white;
+font-size:18px;
+border-radius:30px;
+cursor:pointer;
+}
+
+/* SECTIONS */
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#ff4500;
+}
+
+/* TRAINER */
+
+.trainer-card{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+background:#1b1b1b;
+padding:40px;
+border-radius:12px;
+max-width:900px;
+margin:auto;
+}
+
+.trainer-card img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #ff4500;
+}
+
+.trainer-info h3{
+color:#ff4500;
+font-size:28px;
+}
+
+/* PRICING */
+
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.price-card{
+background:#1b1b1b;
+padding:30px;
+text-align:center;
+border-radius:10px;
+}
+
+.price{
+font-size:35px;
+color:#ff4500;
+margin:10px 0;
+}
+
+/* CALCULATORS */
+
+.calc-box{
+max-width:400px;
+margin:auto;
+background:#1b1b1b;
+padding:30px;
+border-radius:10px;
+text-align:center;
+}
+
+.calc-box input, .calc-box select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:5px;
+}
+
+.calc-box button{
+padding:12px 30px;
+background:#ff4500;
+border:none;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+.result{
+margin-top:15px;
+color:#ff4500;
+}
+
+/* DIET */
+
+.diet-box{
+max-width:500px;
+margin:auto;
+text-align:center;
+background:#1b1b1b;
+padding:30px;
+border-radius:10px;
+}
+
+/* FORM */
+
+.form-container{
+max-width:500px;
+margin:auto;
+background:#1b1b1b;
+padding:30px;
+border-radius:10px;
+}
+
+.form-container input,
+.form-container select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:5px;
+}
+
+.form-container button{
+width:100%;
+padding:12px;
+background:#ff4500;
+border:none;
+color:white;
+font-size:18px;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#000;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">SS FITNESS</div>
+
+<nav>
+<a href="#trainer">Trainer</a>
+<a href="#pricing">Pricing</a>
+<a href="#bmi">BMI</a>
+<a href="#bodyfat">Body Fat</a>
+<a href="#diet">Diet</a>
+<a href="#membership">Join</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Build Your Dream Body</h1>
+<button onclick="scrollToJoin()">Join Now</button>
+
+</section>
+
+<!-- TRAINER -->
+
+<section id="trainer">
+
+<h2 class="section-title">Meet Our Trainer</h2>
+
+<div class="trainer-card">
+
+<img src="trainer.jpg" alt="Santosh Suryvanshi">
+
+<div class="trainer-info">
+ 
+
+<h3>Santosh Suryvanshi</h3>
+<p>Professional Gym & Nutrition Coach</p>
+
+<p>
+Certified fitness coach helping members achieve muscle gain,
+fat loss and strength training goals with proper workout and
+nutrition guidance.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PRICING -->
+
+<section id="pricing">
+
+<h2 class="section-title">Membership Plans</h2>
+
+<div class="pricing">
+
+<div class="price-card">
+<h3>Basic</h3>
+<div class="price">₹999</div>
+<p>Gym Access</p>
+<p>Locker Room</p>
+</div>
+
+<div class="price-card">
+<h3>Pro</h3>
+<div class="price">₹1999</div>
+<p>Trainer Guidance</p>
+<p>Diet Plan</p>
+</div>
+
+<div class="price-card">
+<h3>Premium</h3>
+<div class="price">₹2999</div>
+<p>Personal Trainer</p>
+<p>Custom Workout</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- BMI -->
+
+<section id="bmi">
+
+<h2 class="section-title">BMI Calculator</h2>
+
+<div class="calc-box">
+
+<input type="number" id="weight" placeholder="Weight (kg)">
+<input type="number" id="height" placeholder="Height (cm)">
+
+<button onclick="calculateBMI()">Calculate BMI</button>
+
+<div class="result" id="bmiResult"></div>
+
+</div>
+
+</section>
+
+<!-- BODY FAT -->
+
+<section id="bodyfat">
+
+<h2 class="section-title">Body Fat Calculator</h2>
+
+<div class="calc-box">
+
+<select id="gender">
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+
+<input type="number" id="waist" placeholder="Waist (cm)">
+<input type="number" id="neck" placeholder="Neck (cm)">
+<input type="number" id="hip" placeholder="Hip (cm, for women)">
+
+<input type="number" id="height2" placeholder="Height (cm)">
+
+<button onclick="calculateFat()">Calculate Body Fat</button>
+
+<div class="result" id="fatResult"></div>
+
+</div>
+
+</section>
+
+<!-- DIET -->
+
+<section id="diet">
+
+<h2 class="section-title">Interactive Diet Planner</h2>
+
+<div class="diet-box">
+
+<select id="goal">
+
+<option value="">Select Goal</option>
+<option value="loss">Weight Loss</option>
+<option value="gain">Muscle Gain</option>
+<option value="maintain">Maintenance</option>
+
+</select>
+
+<button onclick="generateDiet()">Generate Diet</button>
+
+<div id="dietResult"></div>
+
+</div>
+
+</section>
+
+<!-- MEMBERSHIP -->
+
+<section id="membership">
+
+<h2 class="section-title">Join SS FITNESS</h2>
+
+<div class="form-container">
+
+<form onsubmit="submitForm(event)">
+
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email" required>
+<input type="tel" placeholder="Phone" required>
+
+<select required>
+<option>Select Plan</option>
+<option>Basic</option>
+<option>Pro</option>
+<option>Premium</option>
+</select>
+
+<button type="submit">Register</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<script>
+
+/* Scroll */
+
+function scrollToJoin(){
+document.getElementById("membership").scrollIntoView();
+}
+
+/* Membership */
+
+function submitForm(e){
+e.preventDefault();
+alert("Membership Registered Successfully 💪");
+}
+
+/* BMI */
+
+function calculateBMI(){
+
+let w=document.getElementById("weight").value;
+let h=document.getElementById("height").value/100;
+
+let bmi=w/(h*h);
+
+document.getElementById("bmiResult").innerHTML=
+"Your BMI: "+bmi.toFixed(1);
+
+}
+
+/* Body Fat */
+
+function calculateFat(){
+
+let waist=document.getElementById("waist").value;
+let neck=document.getElementById("neck").value;
+let height=document.getElementById("height2").value;
+
+let fat=(waist-neck)/height*100;
+
+document.getElementById("fatResult").innerHTML=
+"Estimated Body Fat: "+fat.toFixed(1)+"%";
+
+}
+
+/* Diet */
+
+function generateDiet(){
+
+let goal=document.getElementById("goal").value;
+
+let diet="";
+
+if(goal=="loss"){
+diet="Breakfast: Oats + Eggs<br>Lunch: Brown rice + Chicken<br>Dinner: Paneer + Salad";
+}
+
+if(goal=="gain"){
+diet="Breakfast: Oats + Banana + Eggs<br>Lunch: Rice + Chicken<br>Dinner: Paneer + Chapati";
+}
+
+if(goal=="maintain"){
+diet="Balanced diet with protein, carbs and vegetables.";
+}
+
+document.getElementById("dietResult").innerHTML=diet;
+
+}
+</script>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<p>📍 Siddhanerli</p>
+<p>📞 +91 9011653509</p>
+<p>📧 info@ssfitness.com</p>
+
+</section>
+<footer>
+
+<p>© 2026 SS FITNESS | All Rights Reserved</p>
+
+</footer>
+
+
+
+
+
+</body>
+</html>
